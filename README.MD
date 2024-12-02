@@ -52,7 +52,7 @@ With a user-friendly interface and advanced features, the system simplifies reco
 
 #### Step 02:
 
-  - Import into that empty database with a SQL database that is found on following folder of this repository **(attendance-system-with-face-recognition/1-database)**.
+  - Import into that empty database with a SQL database that is found on following folder of this repository **(docs/database)**.
 
 
   ![](docs/media/import-database.jpg)
@@ -61,15 +61,15 @@ With a user-friendly interface and advanced features, the system simplifies reco
 
 ### Setup Attendance Receiver - Face Scanner (Python)
 
-The attendance receiver is the main script that takes attendances from employees and store in the database. This module handles OR code detection, face recognition processes.
+The attendance receiver is the main script that takes attendance from employees and stores it in the database. This module handles OR code detection, and face recognition processes.
 
 Setting up this attendance receiver is a bit tricky one since it contains many dependencies and framework installation.
 
-**Note:** We need to install all dependencies in a Python virtual environment in order to connect the management panel (C#) and attendances receiver (Python) properly. The virtual environment name must be **ai_attendance_system_env**. Because, the management panel (C#) listens for environment that has the name of **ai_attendance_system_env**.
+**Note:** We need to install all dependencies in a Python virtual environment in order to connect the management panel (C#) and attendance receiver (Python) properly. The virtual environment name must be **ai_attendance_system_env**. Because, the management panel (C#) listens for environment that has the name of **ai_attendance_system_env**.
 
 ### Create a Python virtual environment with the name of (ai_attendance_system_env)
 
-In this step, a python virtual environment needs to be created in order to setup the attendance receiver (Face Scanner) module. There are many environment management tools available such as Venv, Anaconda, Virtualenv and etc. Here, we are going to use the Anaconda Python distribution tool to manage environments and packages installation. Because, Anaconda usually use for advanced data science purpose.
+In this step, a Python virtual environment needs to be created to setup the attendance receiver (Face Scanner) module. There are many environment management tools available such as Venv, Anaconda, Virtualenv, etc. Here, we are going to use the Anaconda Python distribution tool to manage environments and package installation. Because Anaconda is usually used for advanced data science purposes.
 
 #### Step 01:
 
@@ -79,7 +79,7 @@ In this step, a python virtual environment needs to be created in order to setup
 
 Anaconda is a distribution of the Python and R programming languages for scientific computing (data science, machine learning applications, large-scale data processing, predictive analytics, etc.), that aims to simplify package management and deployment.
 
-In order to install the Anaconda distribution, please checkout the official website for the instructions (https://www.anaconda.com/).
+In order to install the Anaconda distribution, please check out the official website for the instructions (https://www.anaconda.com/).
 
 Download Anaconda: https://www.anaconda.com/products/individual
 
@@ -102,7 +102,7 @@ Anaconda Documentation: https://docs.anaconda.com/
 
  - Create a virtual environment using Anaconda.
 
-At its core, the main purpose of Python virtual environments is to create an isolated environment for Python projects. This means that each project can have its own dependencies, regardless of what dependencies every other project has.
+At its core, the main purpose of Python virtual environments is to create an isolated environment for Python projects. This means that each project can have its dependencies, regardless of what dependencies every other project has.
 
   ![](docs/media/env.png)
 
