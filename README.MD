@@ -11,7 +11,7 @@ This is an artificial intelligence based attendance management system with face 
 This project can be divided into two main sub-systems. Attendance receiver module also called as face scanner (Written in Python) for reading and updating attendance to the database, and management module (Written in C#) for creating datasets of employees, training AI models with GUI, entering employees details and other management relented operations .
 
 
-![](github-readme-content/diagram.png)
+![](docs/media/diagram.png)
 
 
 ## Features
@@ -51,14 +51,14 @@ This project can be divided into two main sub-systems. Attendance receiver modul
 #### Step 01:
   - Create an empty database in MySQL panel with name of **"management_auto_attendance_system"**.
 
-![](github-readme-content/create-database.jpg)
+![](docs/media/create-database.jpg)
 
 #### Step 02:
 
   - Import into that empty database with a SQL database that is found on following folder of this repository **(attendance-system-with-face-recognition/1-database)**.
 
 
-  ![](github-readme-content/import-database.jpg)
+  ![](docs/media/import-database.jpg)
 
 
 
@@ -78,7 +78,7 @@ In this step, a python virtual environment needs to be created in order to setup
 
   - Install Anaconda Python distribution.
 
-  ![](github-readme-content/anaconda-logo.png)
+  ![](docs/media/anaconda-logo.png)
 
 Anaconda is a distribution of the Python and R programming languages for scientific computing (data science, machine learning applications, large-scale data processing, predictive analytics, etc.), that aims to simplify package management and deployment.
 
@@ -107,7 +107,7 @@ Anaconda Documentation: https://docs.anaconda.com/
 
 At its core, the main purpose of Python virtual environments is to create an isolated environment for Python projects. This means that each project can have its own dependencies, regardless of what dependencies every other project has.
 
-  ![](github-readme-content/env.png)
+  ![](docs/media/env.png)
 
 - Enter the bellow command in Terminal/CMD after the successful installation of Anaconda.
 
@@ -115,7 +115,7 @@ At its core, the main purpose of Python virtual environments is to create an iso
  conda create -n ai_attendance_system_env python=3.6
 ```
 
-![](github-readme-content/create-env.jpg)
+![](docs/media/create-env.jpg)
 
 At this point, we are creating a virtual environment with the name of "ai_attendance_system_env" and this environment is using python 3.6.
 
@@ -128,7 +128,7 @@ At this point, we are creating a virtual environment with the name of "ai_attend
   ```cmd
     conda activate ai_attendance_system_env
   ```
-  ![](github-readme-content/activate-env.jpg)
+  ![](docs/media/activate-env.jpg)
 
 
 **Note:** After the activation, If we install a dependency, it will be installed under this environment.
@@ -199,7 +199,7 @@ The scripts are found on the following directory
   attendance-system-with-face-recognition\0-management-auto-attendance-system\Management_Auto_Attendance_System\bin\Debug
 ```
 
-  ![](github-readme-content/files.jpg)
+  ![](docs/media/files.jpg)
 
 #### 01. dataset-creator.py script explained
 
@@ -233,7 +233,7 @@ Attendance receiver is the main module that takes attendance (Python) and update
 - Update attendance to database.
 
 
-![](github-readme-content/attendance-receiver-diagram.drawio.png)
+![](docs/media/attendance-receiver-diagram.drawio.png)
 
 
 To run (execute) the attendance receiver, please open the following batch script that is found the following directory.
@@ -242,7 +242,7 @@ To run (execute) the attendance receiver, please open the following batch script
   attendance-system-with-face-recognition\0-management-auto-attendance-system\Management_Auto_Attendance_System\bin\Debug\run.bat
 ```
 
-![](github-readme-content/attendance-receiver.gif)
+![](docs/media/attendance-receiver.gif)
 
 This module updates attendance to the database after completing these procedures. Scan QR code, blink eyes.
 
@@ -270,14 +270,14 @@ The database setup has been already finished in the above section (Setup Managem
 
 #### Splash Screen
 
-![](github-readme-content/loading-screen.jpg)
+![](docs/media/loading-screen.jpg)
 
 The splash screen is the loading screen of the management system.
 
 
 #### Login Screen
 
-![](github-readme-content/loggin-screen.jpg)
+![](docs/media/loggin-screen.jpg)
 
 The login screen is the authentication section of the management system. Currently, this module has only admin account.
 
@@ -288,7 +288,7 @@ The login screen is the authentication section of the management system. Current
 
 #### Dashboard
 
-![](github-readme-content/dashboard.jpg)
+![](docs/media/dashboard.jpg)
 
 The management panel dashboard is the central are of all features' accesses and usages.
 
@@ -307,7 +307,7 @@ The management panel dashboard is the central are of all features' accesses and 
 
 #### Manage Employees (Insert Employees Module)
 
-![](github-readme-content/manage-insert-employee.jpg)
+![](docs/media/manage-insert-employee.jpg)
 
 The main function of this module is to register employees to the database. The system admin needs to enter some basic information of an employee including a headshot photo.
 
@@ -318,7 +318,7 @@ The main function of this module is to register employees to the database. The s
 
 #### Manage Employees (Modify Employees Module)
 
-![](github-readme-content/manage-employees-modify-employees.jpg)
+![](docs/media/manage-employees-modify-employees.jpg)
 
 This main function of this module is to update/edit employees' details in the database. It also has function to delete employees.
 
@@ -330,7 +330,7 @@ This main function of this module is to update/edit employees' details in the da
 
 #### Create Dataset
 
-![](github-readme-content/create-dataset.jpg)
+![](docs/media/create-dataset.jpg)
 
 This module is responsible for creating & managing datasets of employees' face. It lists out all the employees' ids in the first dropdown select box who DOES NOT have dataset.
 
@@ -351,20 +351,20 @@ The bellow table shows up all the datasets that are already been taken. The admi
 
 This Python script will be trigger when clicking the green "Start Capturing" button by the C# with the help of a batch script.
 
-![](github-readme-content/dataset-creator.gif)
+![](docs/media/dataset-creator.gif)
 
 
 #### Training
 
 The primary function of this module is to train a machine learning model for the face recognition task, of a particular employee with the captured face image samples.
 
-![](github-readme-content/training.jpg)
+![](docs/media/training.jpg)
 
 It lists out all the employees' ids in the first dropdown select box who DOES NOT have a face recognition machine learning model.
 
 The admin will select an employee that needs face recognition model, and then the admin can simply click the "Start Training" button to begin the training process.
 
-![](github-readme-content/training-section.gif)
+![](docs/media/training-section.gif)
 
 The bellow table lists out all the trained models, from there, the admin can delete or search ML model of a particular employee.
 
@@ -375,7 +375,7 @@ The bellow table lists out all the trained models, from there, the admin can del
 
 The employee will show this QR-Code to load his model to verify his face by blinking his/her eyes to update the attendance record to the database.
 
-![](github-readme-content/qr-code.jpg)
+![](docs/media/qr-code.jpg)
 
 ##### Features
 
@@ -394,14 +394,14 @@ FaceNet takes an image of the person’s face as input and outputs a vector of 1
 
 Mapping high-dimensional data (like images) into low-dimensional representations (embeddings) has become a fairly common practice in machine learning these days
 
-![](github-readme-content/facenet1.jpg)
+![](docs/media/facenet1.jpg)
 
-![](github-readme-content/facenet2.jpg)
+![](docs/media/facenet2.jpg)
 
 
 #### Attendance Report
 
-![](github-readme-content/attendance-report.gif)
+![](docs/media/attendance-report.gif)
 
 This module is the place where the attendance details are managed & maintained. It will show who are present on particular date.  
 
@@ -425,9 +425,9 @@ face in the database. Then, it will be reviewed by the system admin manually.
 
 This module will list all the attendances that are not face verified. From this table, the system admin will manually verify the face.
 
-![](github-readme-content/face-verify-2.jpg)
+![](docs/media/face-verify-2.jpg)
 
-![](github-readme-content/face-verify.jpg)
+![](docs/media/face-verify.jpg)
 
 The system admin will see these images and manually verify them via clicking the "Verify Face" button.
 
@@ -446,14 +446,14 @@ This module is the setting part of the system. From this module, the system admi
 - Change Password
 - Turn on/off face verification
 
-![](github-readme-content/setttings.jpg)
+![](docs/media/setttings.jpg)
 
 
 ## Others & References
 
 #### To change camera index in python script.
 
-![](github-readme-content/ref1.jpg)
+![](docs/media/ref1.jpg)
 
 There are 2 main Python scripts that are using OpenCV, those are dataset-creator.py and run.py.
 
