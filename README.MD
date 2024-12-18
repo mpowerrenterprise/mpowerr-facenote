@@ -1,12 +1,12 @@
-# Mpowerr FacePrint Lite
+# Mpowerr FaceNote
 
 ## Introduction
 
-Mpowerr FacePrint Lite is an open-source version of the Mpowerr FacePrint, designed to provide a streamlined and efficient solution for attendance management. Built on AI-driven facial recognition technology, it offers an innovative approach to tracking attendance, eliminating manual errors, and ensuring real-time updates.
+Mpowerr FaceNote is a lightweight, open-source version of Mpowerr FacePrint, offering a streamlined solution for attendance management with limited features. Powered by AI-driven facial recognition technology, it provides an efficient and modern approach to tracking attendance, reducing manual effort, and ensuring real-time updates.
 
-This open-source system retains the core functionality of its commercial counterpart, catering to workplaces, educational institutions, and other organizational environments. With its user-friendly interface and essential features, Mpowerr FacePrint Lite simplifies attendance tracking while supporting modern, technology-driven management practices.
+While it offers a simplified feature set, Mpowerr FaceNote retains the core functionality required for effective attendance tracking. It is designed to meet the needs of workplaces, educational institutions, and other organizations looking for a reliable and user-friendly solution.
 
-By adopting Mpowerr FacePrint Lite, organizations can embrace a reliable, open-source tool that enhances productivity, streamlines operations, and sets the stage for more advanced attendance solutions.
+By adopting Mpowerr FaceNote, organizations can leverage a cost-effective, open-source tool to enhance productivity, streamline operations, and lay the foundation for more advanced attendance management systems.
 
 ![](docs/media/diagram.png)
 
