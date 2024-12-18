@@ -1,14 +1,12 @@
-# Mpowerr FacePrint
+# Mpowerr FacePrint Lite
 
 ## Introduction
 
-Attendance management is an essential aspect of organizations and institutions, but traditional methods like manual logs and punch cards are often time-consuming and prone to errors. As the need for efficient and accurate systems grows, advancements in technology have paved the way for smarter solutions.
+Mpowerr FacePrint Lite is an open-source version of the Mpowerr FacePrint, designed to provide a streamlined and efficient solution for attendance management. Built on AI-driven facial recognition technology, it offers an innovative approach to tracking attendance, eliminating manual errors, and ensuring real-time updates.
 
-Face recognition technology has emerged as a game-changer, offering seamless and reliable identification. As a leading biometric method, it enables real-time tracking and eliminates the inefficiencies associated with manual processes, making it an ideal tool for attendance management.
+This open-source system retains the core functionality of its commercial counterpart, catering to workplaces, educational institutions, and other organizational environments. With its user-friendly interface and essential features, Mpowerr FacePrint Lite simplifies attendance tracking while supporting modern, technology-driven management practices.
 
-This AI-powered attendance system leverages facial recognition to automate attendance tracking, ensuring real-time updates and reducing errors. It is versatile and adaptable, catering to the needs of workplaces, educational institutions, and other organizational environments.
-
-With a user-friendly interface and advanced features, the system simplifies record-keeping, enables efficient data management, and generates insightful reports. By integrating this solution, organizations can enhance productivity, streamline operations, and embrace modern attendance management practices.
+By adopting Mpowerr FacePrint Lite, organizations can embrace a reliable, open-source tool that enhances productivity, streamlines operations, and sets the stage for more advanced attendance solutions.
 
 ![](docs/media/diagram.png)
 
